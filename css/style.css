@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary color */
+  --Nutmeg-color: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+
+  /* Neutral color */
+  --White-color: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell-background-color: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--Eggshell-background-color);
+  padding: 1.9rem 2.5rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  line-height: 1.6;
+}
+
+.ingredients,
+.preparation-section {
+  margin-top: 1.4rem;
+}
+
+.paragraph,
+.ingredients,
+.instructions,
+.instructions li span,
+.preparation-section,
+.preparation-section li span,
+.nutrition-section,
+.gram {
+  color: var(--Wenge-Brown);
+}
+
+.container {
+  background-color: var(--White-color);
+  padding: 2.2rem;
+  margin: auto;
+  max-width: 48rem;
+  border-radius: 0.7rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 0.6rem;
+}
+
+.title {
+  font-family: 'Young Serif', serif;
+  margin-top: 1.8rem;
+  letter-spacing: 0.2rem;
+  color: var(--Dark-Charcoal);
+}
+
+.paragraph {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* PREPARATION SECTION */
+
+.preparation-section {
+  font-family: 'Outfit', sans-serif;
+  background: var(--Rose-White);
+  padding: 2.5rem;
+  border-radius: 0.6rem;
+}
+
+.preparation-section h3 {
+  color: var(--Dark-Raspberry);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.preparation-section li span {
+  font-weight: bold;
+}
+
+/*  INGREDIENTS H2, INSTRUCTIONS H2 and NUTRITION SECTION H2 */
+
+.ingredients h2,
+.instructions h2,
+.nutrition-section h2 {
+  letter-spacing: 4px;
+  color: var(--Nutmeg-color);
+}
+
+/* UNORDERED &ORDERED ITEM */
+ul li,
+ol li {
+  padding-left: 1rem;
+}
+
+li::marker {
+  color: var(--Nutmeg-color);
+}
+
+/* HORIZONTAL LINES */
+.ingredients,
+.instructions {
+  border-bottom: 1px solid var(--Light-Grey);
+  padding: 2rem;
+}
+
+/* INSTRUCTION  */
+
+.instructions {
+  font-size: 1rem;
+}
+
+.instructions ol li span {
+  font-weight: bold;
+}
+
+/* Nutrition section */
+.nutrition-section {
+  margin-top: 1.6rem;
+}
+
+.table {
+  width: 100%;
+  margin: 1.6rem;
+}
+
+th,
+td {
+  padding: 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid var(--Light-Grey);
+}
+
+th {
+  color: var(--Nutmeg-color);
+}
+
+@media only screen and (max-width: 375px) {
+}
+
+/* Footer */
+.attribution {
+  font-size: 16px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
